@@ -10,3 +10,7 @@ dev_dep : build_runner chopper_generator auto_route_generator
 
 Thanks to Santa Mayengbam
 # testApp
+
+
+ first commit : trying out chip components
+ 

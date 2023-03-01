@@ -14,7 +14,7 @@
 import 'package:auto_route/auto_route.dart' as _i2;
 import 'package:flutter/material.dart' as _i3;
 
-import '../pages/home_chip.page.dart' as _i1;
+import '../pages/dragNdrop.page.dart' as _i1;
 
 class AppRouter extends _i2.RootStackRouter {
   AppRouter([_i3.GlobalKey<_i3.NavigatorState>? navigatorKey])
@@ -22,10 +22,10 @@ class AppRouter extends _i2.RootStackRouter {
 
   @override
   final Map<String, _i2.PageFactory> pagesMap = {
-    HomeRoute.name: (routeData) {
+    HomeDragNdropRoute.name: (routeData) {
       return _i2.MaterialPageX<dynamic>(
         routeData: routeData,
-        child: const _i1.HomeChipPage(),
+        child: const _i1.HomeDragNdropPage(),
       );
     }
   };
@@ -33,20 +33,20 @@ class AppRouter extends _i2.RootStackRouter {
   @override
   List<_i2.RouteConfig> get routes => [
         _i2.RouteConfig(
-          HomeRoute.name,
+          HomeDragNdropRoute.name,
           path: '/',
         )
       ];
 }
 
 /// generated route for
-/// [_i1.HomePage]
-class HomeRoute extends _i2.PageRouteInfo<void> {
-  const HomeRoute()
+/// [_i1.HomeDragNdropPage]
+class HomeDragNdropRoute extends _i2.PageRouteInfo<void> {
+  const HomeDragNdropRoute()
       : super(
-          HomeRoute.name,
+          HomeDragNdropRoute.name,
           path: '/',
         );
 
-  static const String name = 'HomeRoute';
+  static const String name = 'HomeDragNdropRoute';
 }
